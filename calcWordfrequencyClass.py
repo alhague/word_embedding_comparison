@@ -14,6 +14,8 @@ def get_hkl(freq):
     hkl = 21
   return hkl
 
+# for word count file replace whitespace with line break and pipe the result through
+# | sort | uniq | sort -nr
 wc_file="default"
 if(len(sys.argv)>1):
   wc_file=sys.argv[1]
